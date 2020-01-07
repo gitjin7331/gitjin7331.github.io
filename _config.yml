@@ -13,7 +13,7 @@ sass:
 plainwhite:
   name: JinYeong Jeong
   tagline: Developer. beginner
-  date_format: "%Y. %m. %d(%a)"
+  date_format: "%Y. %m. %d (%a)"
   sitemap: true # set to true to generate sitemap.xml content
 
   # generate social links in footer
