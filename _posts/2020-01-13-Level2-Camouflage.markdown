@@ -16,7 +16,7 @@ categories: Python Programmers Level_2
 예를 들어 스파이가 가진 옷이 아래와 같고 오늘 스파이가 동그란 안경, 긴 코트, 파란색 티셔츠를 입었다면 다음날은 청바지를 추가로 입거나 동그란 안경 대신 검정 선글라스를 착용하거나 해야 합니다.
 
 | 종류 | 이름 |
-|--|--|
+|:--:|:--:|
 | 얼굴 | 안경, 검정 선글라스 |
 | 상의 | 파란색 티셔츠 |
 | 하의 | 청바지 |
@@ -37,7 +37,7 @@ categories: Python Programmers Level_2
 ### 입출력 예
 
 |clothes|return|
-|--|--|
+|--|:--:|
 |[[yellow_hat,  headgear], [blue_sunglasses,  eyewear], [green_turban,  headgear]]|5|
 |[[crow_mask,  face], [blue_sunglasses,  face], [smoky_makeup,  face]]|3| 
 
@@ -68,7 +68,7 @@ face에 해당하는 의상이 crow_mask, blue_sunglasses, smoky_makeup이므로
 <br /><br />
 
 ##  My Solution
-```python
+```Python
 def solution(clothes):
     ans = 1 
     new_clothe = [] # 옷을 종류별로 묶어서 리스트에 저장
