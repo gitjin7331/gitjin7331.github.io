@@ -7,11 +7,12 @@ categories: Python Programmers Level_2
 
 <br /><br /> 
 **프로그래머스 (Programmers) 코딩테스트 연습 - 해시 - 위장** 
+<br /><br /><br />
 
 ## 문제 설명
 
-[출처] : [https://programmers.co.kr/learn/courses/30/lessons/42578]
-스파이들은 매일 다른 옷을 조합하여 입어 자신을 위장합니다.
+[출처] : [https://programmers.co.kr/learn/courses/30/lessons/42578] <br />
+스파이들은 매일 다른 옷을 조합하여 입어 자신을 위장합니다. <br />
 예를 들어 스파이가 가진 옷이 아래와 같고 오늘 스파이가 동그란 안경, 긴 코트, 파란색 티셔츠를 입었다면 다음날은 청바지를 추가로 입거나 동그란 안경 대신 검정 선글라스를 착용하거나 해야 합니다.
 
 | 종류 | 이름 |
@@ -88,14 +89,14 @@ def solution(clothes):
 
 ### 추가 설명 
 > [[yellow_hat, headgear], [blue_sunglasses, eyewear], [green_turban, headgear]] 가 입력값으로 주어질 경우 
-> >for clothe in clothes: 이 처음으로 실행되면
+> - for clothe in clothes: 이 처음으로 실행되면
 >
 > [yellow_hat, headgear] 가 clothe의 값으로 오게된다. 
-> > if clothe[1] in kind:  <그 다음으로 if 문이 실행> 
+> - if clothe[1] in kind:  <그 다음으로 if 문이 실행> 
 >
 > headgear가 kind에 있는지 확인하지만 kind = []으로 None상태 이므로 
 > else 문이 실행 
-> > kind.append(clothe[1]) # 새로운 '옷의 종류'를 추가
+> - kind.append(clothe[1]) # 새로운 '옷의 종류'를 추가
        new_clothe = new_clothe + [[clothe[0]]]
 > 
 > kind = [headgear], new_clothe = [[yellow_hat]] 의 상태가 된다.
@@ -104,7 +105,7 @@ def solution(clothes):
 > kind = [headgear, eyewear], new_clothe = [[yellow_hat],[blue_sunglasses]] 가 된다. 
 >
 > 마지막으로 for 문에서 if 문이 실행된다.
-> > new_clothe[kind.index(clothe[1])].append(clothe[0]) 가 실행
+> - new_clothe[kind.index(clothe[1])].append(clothe[0]) 가 실행
 > 
 > 현재 clothe[1] = headgear 이고 kind에서 headgear라는 값은 인덱스 '0'에 위치해 있기 때문에 kind.index(clothe[1]) = 0 이 된다.
 > 
@@ -116,12 +117,12 @@ def solution(clothes):
 >
 > 마지막으로 가진 옷으로 조합할 수 있는 경우의 수를 찾아야 한다. 
 >
-> 만약 A = [a,b,c], B = [d,e] 가 있을 때, 
-> 경우의 수를 구하려면 
-> 아무것도 고르지 않았을 경우를 0 이라고 가정하여
-> A = [0,a,b,c], B = [0,d,e]  # A는 4개, B는 3개 가 된다.
-> 결국 4 * 3 = 12가지인데 [0, 0]처럼 아무것도 고르지 않았을 경우를 제외하여 12-1 = 11가지가 된다. 
+> 만약 A = [a,b,c], B = [d,e] 가 있을 때, <br />
+> 경우의 수를 구하려면 <br />
+> 아무것도 고르지 않았을 경우를 0 이라고 가정하여 <br />
+> A = [0,a,b,c], B = [0,d,e]  # A는 4개, B는 3개 가 된다. <br />
+> 결국 4 * 3 = 12가지인데 [0, 0]처럼 아무것도 고르지 않았을 경우를 제외하여 12-1 = 11가지가 된다. <br /><br />
 > 코드로 나타내면 다음과 같다.
-> > for i in new_clothe:
-        ans = ans * (len(i)+1)
-        return ans-1
+> - for i in new_clothe:
+> - ans = ans * (len(i)+1)
+> - return ans-1
