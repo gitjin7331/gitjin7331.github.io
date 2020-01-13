@@ -68,7 +68,7 @@ face에 해당하는 의상이 crow_mask, blue_sunglasses, smoky_makeup이므로
 <br /><br />
 
 ##  My Solution
-```Python
+```python
 def solution(clothes):
     ans = 1 
     new_clothe = [] # 옷을 종류별로 묶어서 리스트에 저장
