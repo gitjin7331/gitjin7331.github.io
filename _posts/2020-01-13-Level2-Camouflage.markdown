@@ -76,7 +76,8 @@ def solution(clothes):
     kind = []  # 옷의 종류를 저장 
     for clothe in clothes: # [옷의 이름, 옷의 종류]를 하나씩 꺼내서 반복문 실행 
         if clothe[1] in kind: # 옷의 종류가 kind안에 이미 존재할 경우 
-           new_clothe[kind.index(clothe[1])].append(clothe[0]) # kind 안에서 '일치하는 옷의 종류의 인덱스'를 '옷의 이름'이 들어있는 리스트의 인덱스에 대입. 그 위치에 새로운 '옷의 이름'을 추가한다. 
+           # kind 안에서 '일치하는 옷의 종류의 인덱스'를 '옷의 이름'이 들어있는 리스트의 인덱스에 대입. 그 위치에 새로운 '옷의 이름'을 추가한다. 
+           new_clothe[kind.index(clothe[1])].append(clothe[0]) 
         else: # kind안에 옷의 종류가 없을 경우 
             kind.append(clothe[1]) # 새로운 '옷의 종류'를 추가
             new_clothe = new_clothe + [[clothe[0]]] # '옷의 이름'을 새로운 이중 리스트에 추가
