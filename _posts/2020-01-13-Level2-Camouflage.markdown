@@ -54,7 +54,6 @@ headgear에 해당하는 의상이 yellow_hat, green_turban이고 eyewear에 해
 3. green_turban
 4. yellow_hat + blue_sunglasses
 5. green_turban + blue_sunglasses
-
 ```
 
 예제 #2  
@@ -69,7 +68,7 @@ face에 해당하는 의상이 crow_mask, blue_sunglasses, smoky_makeup이므로
 <br /><br />
 
 ##  My Solution
-```
+```python
 def solution(clothes):
     ans = 1 
     new_clothe = [] # 옷을 종류별로 묶어서 리스트에 저장
