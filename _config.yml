@@ -3,7 +3,7 @@ author: gitjin7331
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
   This blog is for a beginner developer just starting to study.
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: True # set to true to show excerpts on the homepage
 remote_theme: thelehhman/plainwhite-jekyll
 
 # Minima date format
