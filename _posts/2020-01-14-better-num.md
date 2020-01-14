@@ -16,7 +16,7 @@ categories: Python Programmers Level_2
 
 ## 문제 설명 
 
-![Problem](./img/better_num_1.png)
+![Problem](/img/better_num_1.png)
 
 <br />
 
