@@ -61,7 +61,8 @@ categories: Python Programmers Level_2
 '30' 과 '3'을 비교했을 때, '3'이 우선시 되어야하지만 '30'이 우선시 되기 때문이다. 두 숫자를 조합했을 때, '303' < '330'이기 때문이다.    
 
 이 문제를 해결하려면 
-> '3' == '33' 
+
+` '3' == '33' `
 
 위와 같이 '3'이 '33'과 통일한 우선순위를 지녀야한다.
 
@@ -74,10 +75,12 @@ def solution(numbers):
     numbers.sort(key=lambda x: x*3, reverse=True)
     return str(int(''.join(numbers)))
 ```
-> numbers = list(map(str, numbers))
+
+`numbers = list(map(str, numbers))`
 
 우선 list와 map을 이용하여 numbers 리스트의 요소를 모두 문자열로 바꿔준다. 
-> numbers.sort(key=lambda x: x*3, reverse=True)
+
+`numbers.sort(key=lambda x: x*3, reverse=True)`
 
 이 부분이 진짜 대단한 부분인데, 
 key = lambda x:x*3 을 이용하여 정렬의 기준을 각 요소를 3 곱하기 한 것으로 삼는 것이다. 
@@ -112,6 +115,16 @@ key = lambda x:x*3 을 이용하여 정렬의 기준을 각 요소를 3 곱하�
 ```
 다음과 같은 결과가 나오기 때문에 3을 곱하는 것이다. 
 
+`return str(int(''.join(numbers)))`
+
+마지막 코드도 join을 이용해 문자열을 만들었는데, 왜 굳이 int를 이용해 정수로 만든 후 str로 다시 한번 문자열로 만들었을까?
+
+이 또한 제한사항이 그 이유이다.
+- numbers의 원소는 0 이상 1,000 이하입니다.
+numbers의 원소는 0부터 시작이란다. 근데 만약 모든 원소가 0이면 '0000' 과 같은 말도 안되는 값을 반환할 것이다. 
+
+때문에 정수형으로 변형하면 '0000'은 0이 되고 그것을 다시 '0'으로 바꾸어 반환하는 것이다. 
+
 <br /><br />
 
 
@@ -119,4 +132,4 @@ key = lambda x:x*3 을 이용하여 정렬의 기준을 각 요소를 3 곱하�
 &nbsp;&nbsp;Level 1의 문제들을 풀고 어느 정도 파이썬을 할줄 안다고 자신감에 차 있었지만, 세상에 천재는 많다는 것을 느꼈다. 
 아직은 가야할 길이 많이 남은 것 같다.  
 
-<br /><br /><br />
+<br /><br /><br /><br /><br />
