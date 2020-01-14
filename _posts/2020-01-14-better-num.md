@@ -16,19 +16,19 @@ categories: Python Programmers Level_2
 
 ## 문제 설명 
 
-![문제 설명](./img/better_num_1.png)
+![Problem](./img/better_num_1.png)
 
 <br />
 
 #### 제한 사항
 
-![제한사항](./img/better_num_2.png)
+![Limitations](./img/better_num_2.png)
 
 <br />
 
 #### 입출력 예
 
-![입출력 예](./img/better_num_3.png)
+![inputoutput](./img/better_num_3.png)
 
 <br /><br />
 
@@ -108,3 +108,5 @@ key = lambda x:x*3 을 이용하여 정렬의 기준을 각 요소를 3 곱하�
 ## 느낀점 
 &nbsp;&nbsp;Level 1의 문제들을 풀고 어느 정도 파이썬을 할줄 안다고 자신감에 차 있었지만, 세상에 천재는 많다는 것을 느꼈다. 
 아직은 가야할 길이 많이 남은 것 같다.  
+
+<br /><br /><br />
