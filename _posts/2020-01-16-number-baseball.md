@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "프로그래머스 코딩테스트 연습 - 위장"
-date:   2020-01-13 15:00:00 +0900
+title:  "프로그래머스 코딩테스트 연습 - 숫자 야구"
+date:   2020-01-16 15:00:00 +0900
 categories: Python Programmers Level_2
 ---
 
