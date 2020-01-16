@@ -8,11 +8,11 @@ categories: Python Programmers Level_2
 <br />
 
 ## Contents
-1. 문제 설명 
-[제한사항]
-[입출력 예]
-3. 알고리즘 분석 
-[빠리님의 풀이]
+1. 문제 설명<br /> 
+[제한사항]<br />
+[입출력 예]<br />
+3. 알고리즘 분석 <br />
+[빠리님의 풀이]<br />
 [Most 1 의 풀이]
 
 <br /><br />
